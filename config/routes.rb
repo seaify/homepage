@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   mount RailsSettingsUi::Engine, at: 'settings'
   root to: "home#index"
   get '/about', :to => "home#about"
+  get '/about/edit', :to => "home#about"
+
   get '/contact', :to => "home#contact"
   get '/rating', :to => "home#rating"
   get '/services', :to => "home#services"

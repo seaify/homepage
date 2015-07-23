@@ -1,10 +1,13 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "social-share-button";
 
 @import "home.scss";
 @import "topics.scss";
 @import "scaffolds.scss";
+
+
 
 body {
   background: #f8f8f8;

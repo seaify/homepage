@@ -61,6 +61,8 @@ gem 'nokogiri', '1.6.5'
 gem 'mysql2'
 gem 'factory_girl'
 gem 'devise'
+# 分享功能
+gem 'social-share-button', '0.1.5'
 
 group :development do
   gem 'guard-bundler'
