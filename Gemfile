@@ -60,6 +60,7 @@ gem 'nokogiri', '1.6.5'
 
 gem 'mysql2'
 gem 'factory_girl'
+gem 'devise'
 
 group :development do
   gem 'guard-bundler'

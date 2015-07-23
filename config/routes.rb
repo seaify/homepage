@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :topics
   mount RailsSettingsUi::Engine, at: 'settings'
   root to: "home#index"
