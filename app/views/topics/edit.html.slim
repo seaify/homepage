@@ -1,0 +1,7 @@
+h1 = t('action.edit') + Topic.model_name.human
+
+== render 'form'
+
+= link_to t('action.show'), @topic
+'|
+= link_to t('action.back'), topics_path

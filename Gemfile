@@ -41,6 +41,8 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
 end
 
 
@@ -51,14 +53,29 @@ gem 'slim-rails'
 gem 'simple_form', '~> 3.1.0'
 gem 'bootstrap-sass'
 
-gem 'mongoid_colored_logger'
 gem 'redcarpet', '~> 3.2.3'
 gem 'rouge', '~> 1.8.0'
 gem 'auto-space', '0.0.4'
 gem 'nokogiri', '1.6.5'
 
-# Mongoid 辅助插件
-gem 'mongoid', '4.0.2'
-gem 'mongoid-rails'
-gem 'mongoid_auto_increment_id', '0.6.4'
-gem 'mongoid_rails_migrations', '1.0.0'
+gem 'mysql2'
+gem 'factory_girl'
+
+group :development do
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'guard-migrate'
+  gem 'guard-annotate'
+  gem 'guard-shell'
+  gem 'quiet_assets'
+  gem 'rails_layout'
+  gem 'spring-commands-rspec'
+  gem 'better_errors'
+  gem 'meta_request'
+  gem 'binding_of_caller'
+  gem 'hirb'
+  gem 'brakeman'
+  gem 'rails_panel'
+end

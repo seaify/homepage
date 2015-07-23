@@ -1,0 +1,21 @@
+h1 = Topic.model_name.human
+
+table.table.table-striped
+  tr
+    th = Topic.human_attribute_name("title")
+    th = Topic.human_attribute_name("body")
+    th
+    th
+    th
+
+  - @topics.each do |topic|
+    tr
+      td = topic.title
+      td = topic.body
+      td = link_to t('action.show'), topic
+      td = link_to t('action.edit'), edit_topic_path(topic)
+      td = link_to t('action.delete'), topic, :confirm => t('action.confirm_delete'), :method => :delete
+
+br
+
+= link_to (t('action.new') + Topic.model_name.human), new_topic_path

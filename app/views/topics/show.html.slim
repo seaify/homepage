@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong = Topic.human_attribute_name("title") + ':'
+  = @topic.title
+p
+  strong = Topic.human_attribute_name("body") + ':'
+  = @topic.body
+
+= link_to t('action.edit'), edit_topic_path(@topic)
+'|
+= link_to t('action.back'), topics_path

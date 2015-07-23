@@ -1,8 +1,38 @@
+---
 zh-CN:
   action:
-    new: 新建
-    edit: 编辑
-    show: 查看
-    delete: 删除
-    back: 返回
-    confirm_delete: 确认删除
+    back: "返回"
+    new: "创建"
+    show: "查看"
+    edit: "编辑"
+    delete: "删除"
+    confirm_delete: "确认删除"
+    created:
+      successfully: "创建成功"
+    updated:
+      successfully: "更新成功"
+    destroyed:
+      successfully: "删除成功"
+  activerecord:
+    models:
+      create_topic: create_topic
+      topic: topic
+    attributes:
+      create_topic:
+        id: ID
+        created_at: "创建时间"
+        updated_at: "更新时间"
+      topic:
+        title: title
+        body: body
+        id: ID
+        created_at: "创建时间"
+        updated_at: "更新时间"
+  helpers:
+    submit:
+      create_topic:
+        create: "创建"
+        update: "更新"
+      topic:
+        create: "创建"
+        update: "更新"
