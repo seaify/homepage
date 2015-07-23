@@ -1,3 +1,7 @@
 
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "home.scss";
+@import "topics.scss";
+@import "scaffolds.scss";
