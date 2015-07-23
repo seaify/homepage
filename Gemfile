@@ -45,8 +45,20 @@ end
 
 
 gem 'rails-settings-ui', '~> 0.3.0'
- gem 'rails-settings-cached', '0.4.1'
+gem 'rails-settings-cached', '0.4.1'
 
 gem 'slim-rails'
 gem 'simple_form', '~> 3.1.0'
 gem 'bootstrap-sass'
+
+gem 'mongoid_colored_logger'
+gem 'redcarpet', '~> 3.2.3'
+gem 'rouge', '~> 1.8.0'
+gem 'auto-space', '0.0.4'
+gem 'nokogiri', '1.6.5'
+
+# Mongoid 辅助插件
+gem 'mongoid', '4.0.2'
+gem 'mongoid-rails'
+gem 'mongoid_auto_increment_id', '0.6.4'
+gem 'mongoid_rails_migrations', '1.0.0'
