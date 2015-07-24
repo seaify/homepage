@@ -1,5 +1,11 @@
 ---
 zh-CN:
+  common:
+    editor_toolbar_edit: 编辑
+    editor_toolbar_preview: 预览
+  topics:
+    add_image: 图片
+    insert_codes: 代码
   action:
     back: "返回"
     new: "创建"

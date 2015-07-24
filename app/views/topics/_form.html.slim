@@ -1,9 +1,9 @@
 = simple_form_for(@topic) do |f|
   = f.error_notification
 
-  .form-inputs
-    = f.input :title
-    = f.input :body, :input_html => {rows: 20}
+  = f.input :title
+  = render "editor_toolbar"
+  = f.input :body, :input_html => {rows: 20}
 
   .form-actions
     = f.button :submit
