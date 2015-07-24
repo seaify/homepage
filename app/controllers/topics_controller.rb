@@ -6,6 +6,13 @@ class TopicsController < ApplicationController
     @topics = Topic.all
   end
 
+  def preview
+    @body = params[:body]
+    respond_to do |format|
+      format.json
+    end
+  end
+
   # GET /topics/1
   def show
   end

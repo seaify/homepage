@@ -1,3 +1,14 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+# TopicsController 下所有页面的 JS 功能
+$(document).on 'ready page:load', ->
+
+  preview = ->
+    body = $('preview').val()
+    $("#preview").text "Loading..."
+
+    $.post "/topics/preview",
+      "body": body,
+      (data) ->
+        $("#preview").html data.body
+      "json"
+
+  $('.preview_button').click  preview

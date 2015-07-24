@@ -67,6 +67,7 @@ gem 'social-share-button', '0.1.5'
 gem 'god'
 gem 'newrelic_rpm'
 gem 'oneapm_rpm'
+gem 'awesome_print'
 
 gem 'seed_dump'
 
