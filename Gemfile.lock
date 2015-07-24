@@ -174,6 +174,9 @@ GEM
     lumberjack (1.0.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    md_emoji (1.0.2)
+      railties (>= 3.1.0)
+      redcarpet (>= 2.0)
     meta_request (0.3.4)
       callsite (~> 0.0, >= 0.0.11)
       rack-contrib (~> 1.1)
@@ -197,6 +200,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.2.0)
+      byebug (~> 5.0)
+      pry (~> 0.10)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
@@ -234,6 +240,8 @@ GEM
       i18n
       rails (>= 3.0)
       sass-rails (>= 4.0.0)
+    rails_autolink (1.1.6)
+      rails (> 3.1)
     rails_layout (1.0.26)
     rails_panel (0.0.1)
     railties (4.2.2)
@@ -362,16 +370,20 @@ DEPENDENCIES
   hirb
   jbuilder (~> 2.0)
   jquery-rails
+  md_emoji
   meta_request
   mysql2
   newrelic_rpm
   nokogiri (= 1.6.5)
   oneapm_rpm
+  pry
+  pry-byebug
   quiet_assets
   rack-livereload
   rails (= 4.2.2)
   rails-settings-cached (= 0.4.1)
   rails-settings-ui (~> 0.3.0)
+  rails_autolink
   rails_layout
   rails_panel
   redcarpet (~> 3.2.3)

@@ -58,6 +58,10 @@ gem 'rouge', '~> 1.8.0'
 gem 'auto-space', '0.0.4'
 gem 'nokogiri', '1.6.5'
 
+# coding: utf-8
+gem 'rails_autolink'
+gem 'md_emoji'
+
 gem 'mysql2'
 gem 'factory_girl'
 gem 'devise'
@@ -89,4 +93,6 @@ group :development do
   gem 'hirb'
   gem 'brakeman'
   gem 'rails_panel'
+  gem 'pry'
+  gem 'pry-byebug'
 end
