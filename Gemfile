@@ -64,6 +64,12 @@ gem 'devise'
 # 分享功能
 gem 'social-share-button', '0.1.5'
 
+gem 'god'
+gem 'newrelic_rpm'
+gem 'oneapm_rpm'
+
+gem 'seed_dump'
+
 group :development do
   gem 'guard-bundler'
   gem 'guard-rails'

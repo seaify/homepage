@@ -1,5 +1,7 @@
 h1 = t('action.new') + Topic.model_name.human
-
-== render 'form'
+div.panel.panel-default
+  div.panel-heading 发布新话题
+  div.panel-body
+    == render 'form'
 
 = link_to t('action.back'), topics_path

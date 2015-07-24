@@ -6,6 +6,10 @@ class HomeController < ApplicationController
   def services
   end
 
+  def contact
+
+  end
+
   def rating
   end
 
