@@ -4,6 +4,7 @@
   = f.input :title
   = render "editor_toolbar"
   = f.input :body, :input_html => {rows: 20}
+  div.markdown.form-control#preview
 
   .form-actions
     = f.button :submit

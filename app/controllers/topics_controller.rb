@@ -10,9 +10,10 @@ class TopicsController < ApplicationController
   end
 
   def preview
-    body = params[:body]
-    render = Redcarpet::Render::HTML.new(with_toc_data: true)
-    render :json => {"body" => "ok"}
+    @body = params[:body]
+    respond_to do |format|
+      format.json
+    end
   end
 
   # GET /topics/1
