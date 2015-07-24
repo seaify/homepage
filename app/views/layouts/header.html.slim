@@ -19,6 +19,11 @@ div.header
         li
           a href="/topics/7" Rating from clients
 
-      ui.nav.navbar-nav.navbar-right
-        li.pull-right
-          a href="/users/sign_in" Login
+      - if current_user
+        ul.nav.navbar-nav.navbar-right
+          li
+            = link_to 'Logout', "/users/sign_out", :method => 'delete'
+      - else
+        ul.nav.navbar-nav.navbar-right
+          li
+            = link_to 'Login', "/users/sign_in"

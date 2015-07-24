@@ -6,3 +6,8 @@ div.row
       div.panel-body.markdown
         = raw @topic.body_html
         = social_share_button_tag("你好")
+    - debug(current_user)
+    - if current_user
+      div.panel-footer.clearfix
+        = link_to '编辑', edit_topic_path(@topic.id), class: "pull-right"
+
