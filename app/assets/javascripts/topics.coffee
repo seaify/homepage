@@ -2,7 +2,7 @@
 $(document).on 'ready page:load', ->
 
   preview = ->
-    body = $('preview').val()
+    body = $('#topic_body').val()
     $("#preview").text "Loading..."
 
     $.post "/topics/preview",

@@ -1,3 +1,6 @@
+require 'redcarpet'
+
+
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
 
@@ -8,9 +11,10 @@ class TopicsController < ApplicationController
 
   def preview
     @body = params[:body]
-    respond_to do |format|
-      format.json
-    end
+    render = Redcarpet::Render::HTML.new(with_toc_data: true)
+    parser = Redcarpet::Markdown.new(render)
+    ap parser.render(@body)
+    result = {body: parser.render(@body)}
   end
 
   # GET /topics/1

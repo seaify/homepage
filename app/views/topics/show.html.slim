@@ -1,12 +1,11 @@
 p#notice = notice
 
-p
-  strong = Topic.human_attribute_name("title") + ':'
-  = @topic.title
-p
-  strong = Topic.human_attribute_name("body") + ':'
-  = @topic.body
-
+div.row
+  div.col-md-9
+    div.panel.panel-default
+      div.panel-body.markdown
+        = raw @topic.body
+        = social_share_button_tag("你好")
 = link_to t('action.edit'), edit_topic_path(@topic)
 '|
 = link_to t('action.back'), topics_path
