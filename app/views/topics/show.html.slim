@@ -6,6 +6,3 @@ div.row
       div.panel-body.markdown
         = raw @topic.body_html
         = social_share_button_tag("你好")
-= link_to t('action.edit'), edit_topic_path(@topic)
-'|
-= link_to t('action.back'), topics_path

@@ -10,15 +10,14 @@ $(document).on 'ready page:load', ->
       (data) ->
         console.log data.body
         $("#preview").html data.body
-        #$(this).parent().addClass("active")
-        $("#preview").show()
+        $(".edit").removeClass("active")
+        $(".preview").addClass("active")
+        $("#preview_box").show()
         $("#topic_body").hide()
-        #self.preview($(textarea).val())
 
   $(".edit a").click ->
       $(".preview").removeClass("active")
-      $(this).parent().addClass("active")
-      $("#preview").hide()
+      $("#preview_box").hide()
       $("#topic_body").show()
 
   $('.preview_button').click  preview

@@ -3,10 +3,12 @@
 
   = f.input :title
   = render "editor_toolbar"
-  = f.input :body, :input_html => {rows: 20}
-  div.markdown.form-control#preview
+  div.form-group
+    = f.text_area :body, class: "topic-editor form-control closewarning", rows: 20
+  div.form-group#preview_box style="display:none"
+    div.markdown.form-control#preview
 
-  .form-actions
-    = f.button :submit
+  div.form-group
+    = f.submit :submit, class: 'btn btn-primary col-xs-2'
 
 
