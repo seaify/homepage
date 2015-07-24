@@ -5,3 +5,4 @@
 
 #= require bootstrap-sprockets
 #= require social-share-button
+#= require disqus_rails

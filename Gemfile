@@ -75,6 +75,9 @@ gem 'awesome_print'
 
 gem 'seed_dump'
 
+gem 'disqus_rails'
+
+
 group :development do
   gem 'guard-bundler'
   gem 'guard-rails'

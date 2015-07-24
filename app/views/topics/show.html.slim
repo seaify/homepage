@@ -7,7 +7,12 @@ div.main-container.container#main
         div.panel-body.markdown
           = raw @topic.body_html
           = social_share_button_tag("你好")
+
       - if current_user
         div.panel-footer.clearfix
           = link_to '编辑', edit_topic_path(@topic.id), class: "pull-right"
+
+      div.panel.panel-default
+        div.panel-body.markdown
+          - disqus_thread
 
