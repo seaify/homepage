@@ -1,5 +1,9 @@
 ---
 zh-CN:
+  devise:
+    registrations:
+      user:
+        signed_up: 登陆成功
   common:
     editor_toolbar_edit: 编辑
     editor_toolbar_preview: 预览
