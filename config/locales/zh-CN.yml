@@ -3,10 +3,11 @@ zh-CN:
   devise:
     registrations:
       user:
-        signed_up: 登陆成功
+        signed_up: 注册成功
     sessions:
       user:
         signed_out: 退出登陆成功
+        signed_in: 登陆成功
   common:
     editor_toolbar_edit: 编辑
     editor_toolbar_preview: 预览

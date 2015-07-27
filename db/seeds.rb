@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create!([
+  {email: "dilin.life@gmail.com", encrypted_password: "$2a$10$sIb2SERgP87QmPZPXh.UoOimyKcPDEeuYvvKc4iertpewHpPKHG0G", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-07-27 02:27:05", last_sign_in_at: "2015-07-27 02:27:05", current_sign_in_ip: "::1", last_sign_in_ip: "::1"}
+])
+Topic.create!([
+  {title: "about me", body: "## Work Experience\r\n\r\n### [Self Employed](https://www.upwork.com/users/~01c0bec7e37fe68d2e) （ 2014.04 ~ now）\r\n1. provide both backend and frontend service for ecommerce website using [spree](https://github.com/spree/spree)\r\n2. research for using react with rails\r\n\r\n### [Togic](http://www.togic.com/index.html) （ 2014.03 ~ 2015.04）\r\n1. provide backend service for android/web client\r\n2. write two version ecommerce website, nodejs for Panic buying as the first version, ecstore for the second version\r\n3. provide backend & frontend service for operator Colleague\r\n\r\n### [cootek](http://www.touchpal.com/en/index.html)（ 2011.07 ~ 2013.03 ）\r\n1. japanese input method develop\r\n2. data corpus collect(from twitter, wiki..) and handle\r\n3. write spiders for collect company information\r\n\r\n### [sangfor](http://www.sangfor.com/) ( 2010.07 - 2011.03)\r\n1. research for big data technology like mongodb & hadoop\r\n2. improve mysql database Performance for query & insert\r\n\r\n## opensource project\r\n - [simpletool](https://github.com/seaify/simpletool) : provide quick install for pptp-vpn, ftp, phpmyadmin, oh-my-zsh for ubuntu, with only one command\r\n - [weapon](https://github.com/seaify/weapon) : exctract common useful part to reuse，custom i18n scaffold, support mina deploy, push your repo to github, config rails_settings_ui\r\n"},
+  {title: "Service", body: "## Service I can provide\r\n1. provide both backend & frontend service for websites\r\n2. experienced at spree\r\n3. database design and performance improve\r\n4. teach through skype or teamviewer"},
+  {title: "portfolio", body: "xx"}
+])
