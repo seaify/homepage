@@ -1,8 +1,6 @@
-require 'redcarpet'
-
-
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:show]
 
   # GET /topics
   def index
