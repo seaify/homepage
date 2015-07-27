@@ -78,6 +78,10 @@ gem 'seed_dump'
 
 gem 'disqus_rails'
 
+# deployment
+gem 'mina', require: false
+gem 'mina-unicorn', require: false
+
 
 group :development do
   gem 'guard-bundler'
