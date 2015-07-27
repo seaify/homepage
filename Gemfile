@@ -77,6 +77,7 @@ gem 'owlcarousel-rails'
 gem 'seed_dump'
 
 gem 'disqus_rails'
+gem 'exception_notification'
 
 # deployment
 gem 'mina', :require => false
