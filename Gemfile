@@ -72,6 +72,7 @@ gem 'god'
 gem 'newrelic_rpm'
 gem 'oneapm_rpm'
 gem 'awesome_print'
+gem 'owlcarousel-rails'
 
 gem 'seed_dump'
 

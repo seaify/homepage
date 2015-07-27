@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
   mount RailsSettingsUi::Engine, at: 'settings'
   root to: "home#index"
+  get '/ratings', to: "home#ratings"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

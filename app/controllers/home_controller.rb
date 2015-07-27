@@ -10,7 +10,7 @@ class HomeController < ApplicationController
 
   end
 
-  def rating
+  def ratings
   end
 
   def calendar
