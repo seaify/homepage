@@ -1,4 +1,4 @@
-app_path = File.expand_path( File.join(File.dirname(__FILE__), '..', '..'))
+app_path = File.expand_path( File.join(File.dirname(__FILE__), '..'))
 worker_processes   2
 timeout            180
 listen             '/tmp/unicorn.homepage.sock'
