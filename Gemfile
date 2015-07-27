@@ -79,8 +79,8 @@ gem 'seed_dump'
 gem 'disqus_rails'
 
 # deployment
-gem 'mina'
-gem 'mina-unicorn'
+gem 'mina', :require => false
+gem 'mina-unicorn', :require => false
 
 
 group :development do
