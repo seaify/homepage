@@ -74,6 +74,7 @@ gem 'oneapm_rpm'
 gem 'awesome_print'
 gem 'owlcarousel-rails'
 
+gem 'sidekiq'
 gem 'seed_dump'
 
 gem 'disqus_rails'
