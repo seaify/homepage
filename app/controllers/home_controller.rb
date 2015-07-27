@@ -3,26 +3,19 @@ class HomeController < ApplicationController
   def index
   end
 
-  def services
+  def about
+    @topic = Topic.find(1)
+    render template: 'topics/show.html.slim'
   end
 
-  def contact
-
+  def service
+    @topic = Topic.find(2)
+    render template: 'topics/show.html.slim'
   end
 
   def ratings
   end
 
-  def calendar
-  end
 
-  def portfolio
-  end
 
-  def blog
-
-  end
-
-  def about
-  end
 end

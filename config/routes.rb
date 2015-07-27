@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   mount RailsSettingsUi::Engine, at: 'settings'
   root to: "home#index"
   get '/ratings', to: "home#ratings"
+  get '/about', to: "home#about"
+  get '/service', to: "home#service"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
