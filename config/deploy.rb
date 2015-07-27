@@ -78,8 +78,14 @@ task :deploy => :environment do
     to :launch do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
       queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
+      invoke :'unicorn:restart'
     end
   end
+end
+
+desc "Shows logs."
+task :logs do
+  queue %[cd #{deploy_to!}/current && tail -f log/production.log]
 end
 
 # For help in making your deploy script, see the Mina documentation:
