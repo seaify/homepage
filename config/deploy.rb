@@ -84,6 +84,9 @@ task :deploy => :environment do
 
     to :launch do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
+      queue "mkdir -p #{deploy_to}/#{current_path}/tmp/logs"
+      queue "mkdir -p #{deploy_to}/#{current_path}/tmp/pids"
+      queue "mkdir -p #{deploy_to}/#{current_path}/tmp/sockets"
       queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
       invoke :'unicorn:restart'
     end
