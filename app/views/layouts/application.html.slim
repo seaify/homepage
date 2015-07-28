@@ -9,4 +9,7 @@ html
   body
     = disqus_init
     = render template: 'layouts/header'
-    = yield
+    div.main-container.container#main
+      div.row
+        div.col-md-9
+          = yield
