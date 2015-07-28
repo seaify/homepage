@@ -81,6 +81,7 @@ task :deploy => :environment do
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
+    invoke :kill_unicorn
 
     to :launch do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
@@ -88,10 +89,15 @@ task :deploy => :environment do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/pids"
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/sockets"
       queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
-      run "pkill -f homepage"
       invoke :'unicorn:restart'
     end
   end
+end
+
+desc "kill unicorn"
+task :kill_unicorn do
+  queue "pkill -f homepage"
+  run!
 end
 
 desc "Shows logs."
