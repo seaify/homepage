@@ -1,6 +1,6 @@
 $(document).on 'ready page:load', ->
   console.log("hello");
   $(".owl-carousel").owlCarousel({
-    autoPlay: 2000,
+    autoPlay: 200000,
     items: 1
   })
