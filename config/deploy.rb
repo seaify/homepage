@@ -97,7 +97,6 @@ end
 desc "kill unicorn"
 task :kill_unicorn do
   queue "pkill -f homepage"
-  run!
 end
 
 desc "Shows logs."
