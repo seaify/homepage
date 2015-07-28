@@ -82,6 +82,7 @@ gem 'exception_notification'
 gem 'google-analytics-rails'
 gem 'ahoy_matey'
 gem 'activeuuid', '>= 0.5.0'
+gem 'wice_grid', '3.5.0'
 
 # deployment
 gem 'mina', :require => false
