@@ -81,7 +81,6 @@ task :deploy => :environment do
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
-    invoke :kill_unicorn
 
     to :launch do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
