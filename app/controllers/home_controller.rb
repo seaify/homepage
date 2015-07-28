@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  layout "application", except: [:index]
 
   def index
   end
@@ -15,7 +16,5 @@ class HomeController < ApplicationController
 
   def ratings
   end
-
-
 
 end

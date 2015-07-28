@@ -10,7 +10,8 @@
 #
 
 class Topic < ActiveRecord::Base
+
   def body_html
-    (MarkdownTopicConverter.format(self.body))
+    MarkdownTopicConverter.format(self.body)
   end
 end

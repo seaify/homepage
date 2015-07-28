@@ -1,36 +1,35 @@
 p#notice = notice
 
-div.main-container.container#main
-  div.row
-    div.col-md-9
-      div.panel.panel-default
-        div.panel-body.markdown
-          = raw @topic.body_html
-          = social_share_button_tag("你好")
+div.row
+  div.col-md-9
+    div.panel.panel-default
+      div.panel-body.markdown
+        = raw @topic.body_html
+        = social_share_button_tag("hello")
 
-      - if current_user
-        div.panel-footer.clearfix
-          = link_to '编辑', edit_topic_path(@topic.id), class: "pull-right"
+    - if current_user
+      div.panel-footer.clearfix
+        = link_to '编辑', edit_topic_path(@topic.id), class: "pull-right"
 
-      div.panel.panel-default
-        div.panel-body.markdown
-          - disqus_thread
+    div.panel.panel-default
+      div.panel-body.markdown
+        - disqus_thread
 
-    div.col-md-3
-      div.panel.panel-default
-        div.panel-body.markdown
-          ul.nav.nav-list
-            li.nav-header
-              Social
-            li
-              = link_to "Email Me", "mailto:dilin.life@gmail.com"
-            li
-              = link_to "My Github", "https://github.com/seaify"
-            li
-              = link_to "My LinkedIn", "https://www.linkedin.com/pub/chuck-lei/42/86/b96"
-            li
-              = link_to "My Resume", "https://github.com/seaify/resume/blob/master/resume.en.md"
-            li
-              = link_to "My Ruby-china Blog", "https://ruby-china.org/seaify"
-            li
-              = image_tag 'qrcode.png', :class => "img-responsive"
+  div.col-md-3
+    div.panel.panel-default
+      div.panel-body.markdown
+        ul.nav.nav-list
+          li.nav-header
+            Social
+          li
+            = link_to "Email Me", "mailto:dilin.life@gmail.com"
+          li
+            = link_to "My Github", "https://github.com/seaify"
+          li
+            = link_to "My LinkedIn", "https://www.linkedin.com/pub/chuck-lei/42/86/b96"
+          li
+            = link_to "My Resume", "https://github.com/seaify/resume/blob/master/resume.en.md"
+          li
+            = link_to "My Ruby-china Blog", "https://ruby-china.org/seaify"
+          li
+            = image_tag 'qrcode.png', :class => "img-responsive"
