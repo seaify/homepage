@@ -1,3 +1,23 @@
-= grid(@visits_grid) do |g|
-  = g.column name: 'City', attribute: 'city'
-  = g.column name: 'IP', attribute: 'ip'
+h1 = Visit.model_name.human
+
+table.table.table-striped.applies-summary
+  tr
+    th = Visit.human_attribute_name("ip")
+    th = Visit.human_attribute_name("country")
+    th = Visit.human_attribute_name("city")
+    th = Visit.human_attribute_name("referrer")
+    th = Visit.human_attribute_name("browser")
+    th = Visit.human_attribute_name("os")
+    th = Visit.human_attribute_name("user_agent")
+
+  - @visits.each do |visit|
+    tr
+      td = visit.ip
+      td = visit.country
+      td = visit.city
+      td = visit.referrer
+      td = visit.browser
+      td = visit.os
+      td = visit.user_agent
+
+br
