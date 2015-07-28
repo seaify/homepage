@@ -88,6 +88,10 @@ gem 'jquery-ui-rails'
 gem 'highcharts-rails', '~> 3.0.0'
 gem 'lazy_high_charts'
 
+gem 'spree', github: 'spree/spree', branch: '3-0-stable'
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+
+
 # deployment
 gem 'mina', :require => false
 gem 'mina-unicorn', :require => false

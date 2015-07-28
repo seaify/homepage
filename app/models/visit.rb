@@ -2,8 +2,8 @@
 #
 # Table name: visits
 #
-#  id               :uuid(16)         not null, primary key
-#  visitor_id       :uuid(16)
+#  id               :binary(16)       not null, primary key
+#  visitor_id       :binary(16)
 #  ip               :string(255)
 #  user_agent       :text(65535)
 #  referrer         :text(65535)

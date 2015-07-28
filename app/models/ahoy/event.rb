@@ -2,8 +2,8 @@
 #
 # Table name: ahoy_events
 #
-#  id         :uuid(16)         not null, primary key
-#  visit_id   :uuid(16)
+#  id         :binary(16)       not null, primary key
+#  visit_id   :binary(16)
 #  user_id    :integer
 #  name       :string(255)
 #  properties :text(65535)
