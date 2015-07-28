@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/about', to: "home#about"
   get '/service', to: "home#service"
   get '/visit/show', to: "user_visit#show"
+  get '/visit/chart', to: "user_visit#chart"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

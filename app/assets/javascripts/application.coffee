@@ -6,6 +6,8 @@
 
 #= require turbolinks
 
+#= require highcharts
+
 
 #= require bootstrap-sprockets
 #= require social-share-button

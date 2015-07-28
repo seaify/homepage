@@ -85,6 +85,8 @@ gem 'activeuuid', '>= 0.5.0'
 gem 'wice_grid', '3.5.0'
 gem 'bootstrap-datepicker-rails'
 gem 'jquery-ui-rails'
+gem 'highcharts-rails', '~> 3.0.0'
+gem 'lazy_high_charts'
 
 # deployment
 gem 'mina', :require => false
