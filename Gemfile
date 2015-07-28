@@ -79,6 +79,8 @@ gem 'seed_dump'
 
 gem 'disqus_rails'
 gem 'exception_notification'
+gem 'google-analytics-rails'
+#gem 'ahoy_matey'
 
 # deployment
 gem 'mina', :require => false

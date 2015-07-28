@@ -7,5 +7,5 @@
 #= require social-share-button
 #= require disqus_rails
 
-#= require_tree .
 #= require owl.carousel
+#= require_tree .

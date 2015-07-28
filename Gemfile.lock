@@ -113,6 +113,7 @@ GEM
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     god (0.13.4)
+    google-analytics-rails (0.0.6)
     guard (2.12.8)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -394,6 +395,7 @@ DEPENDENCIES
   factory_girl
   factory_girl_rails
   god
+  google-analytics-rails
   guard-annotate
   guard-bundler
   guard-livereload
