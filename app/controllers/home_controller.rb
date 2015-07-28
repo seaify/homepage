@@ -6,6 +6,8 @@ class HomeController < ApplicationController
 
   def about
     @topic = Topic.find(1)
+    ap "hello"
+    ap current_visit
     render template: 'topics/show.html.slim'
   end
 

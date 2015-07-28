@@ -16,6 +16,7 @@ class TopicsController < ApplicationController
 
   # GET /topics/1
   def show
+
   end
 
   # GET /topics/new

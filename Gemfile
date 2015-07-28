@@ -80,7 +80,8 @@ gem 'seed_dump'
 gem 'disqus_rails'
 gem 'exception_notification'
 gem 'google-analytics-rails'
-#gem 'ahoy_matey'
+gem 'ahoy_matey'
+gem 'activeuuid', '>= 0.5.0'
 
 # deployment
 gem 'mina', :require => false

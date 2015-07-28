@@ -36,6 +36,20 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    activeuuid (0.6.0)
+      activerecord (>= 3.1)
+      uuidtools
+    addressable (2.3.8)
+    ahoy_matey (1.2.0)
+      addressable
+      browser (>= 0.4.0)
+      errbase
+      geocoder
+      rails
+      referer-parser (>= 0.3.0)
+      request_store
+      user_agent_parser
+      uuidtools
     annotate (2.6.10)
       activerecord (>= 3.2, <= 4.3)
       rake (~> 10.4)
@@ -66,6 +80,7 @@ GEM
       ruby_parser (~> 3.7.0)
       sass (~> 3.0)
       terminal-table (~> 1.4)
+    browser (0.8.0)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -95,6 +110,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+    errbase (0.0.3)
     erubis (2.7.0)
     eventmachine (1.0.7)
     exception_notification (4.1.1)
@@ -109,6 +125,7 @@ GEM
     fastercsv (1.5.5)
     ffi (1.9.10)
     formatador (0.2.5)
+    geocoder (1.2.9)
     git-version-bump (0.15.1)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
@@ -277,6 +294,8 @@ GEM
     redis (3.2.1)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
+    referer-parser (0.3.0)
+    request_store (1.2.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     rouge (1.8.0)
@@ -369,6 +388,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    user_agent_parser (2.2.0)
+    uuidtools (2.1.5)
     warden (1.2.3)
       rack (>= 1.0)
     web-console (2.2.1)
@@ -381,6 +402,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activeuuid (>= 0.5.0)
+  ahoy_matey
   auto-space (= 0.0.4)
   awesome_print
   better_errors
