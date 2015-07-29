@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   after_filter :track_action
   private
     def track_action
-      ahoy.track "Processed #{controller_name}##{action_name}", request.filtered_parameters
+      #ahoy.track "Processed #{controller_name}##{action_name}", request.filtered_parameters
     end
 end
