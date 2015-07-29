@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729075629) do
+ActiveRecord::Schema.define(version: 20150729092735) do
 
   create_table "ahoy_events", force: :cascade do |t|
-    t.binary   "visit_id",   limit: 16
+    t.uuid     "visit_id",   limit: 16
     t.integer  "user_id",    limit: 4
     t.string   "name",       limit: 255
     t.text     "properties", limit: 65535
@@ -890,15 +890,15 @@ ActiveRecord::Schema.define(version: 20150729075629) do
   create_table "spree_stores", force: :cascade do |t|
     t.string   "name",              limit: 255
     t.string   "url",               limit: 255
+    t.text     "meta_description",  limit: 65535
+    t.text     "meta_keywords",     limit: 65535
+    t.string   "seo_title",         limit: 255
     t.string   "mail_from_address", limit: 255
     t.string   "default_currency",  limit: 255
     t.string   "code",              limit: 255
     t.boolean  "default",           limit: 1,     default: false, null: false
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
-    t.text     "meta_description",  limit: 65535
-    t.text     "meta_keywords",     limit: 65535
-    t.string   "seo_title",         limit: 255
   end
 
   add_index "spree_stores", ["code"], name: "index_spree_stores_on_code", using: :btree
@@ -925,13 +925,14 @@ ActiveRecord::Schema.define(version: 20150729075629) do
     t.boolean  "included_in_price",  limit: 1,                           default: false
     t.datetime "created_at",                                                             null: false
     t.datetime "updated_at",                                                             null: false
-    t.datetime "deleted_at"
     t.string   "name",               limit: 255
     t.boolean  "show_rate_in_label", limit: 1,                           default: true
+    t.datetime "deleted_at"
   end
 
   add_index "spree_tax_rates", ["deleted_at"], name: "index_spree_tax_rates_on_deleted_at", using: :btree
   add_index "spree_tax_rates", ["included_in_price"], name: "index_spree_tax_rates_on_included_in_price", using: :btree
+  add_index "spree_tax_rates", ["show_rate_in_label"], name: "index_spree_tax_rates_on_show_rate_in_label", using: :btree
   add_index "spree_tax_rates", ["tax_category_id"], name: "index_spree_tax_rates_on_tax_category_id", using: :btree
   add_index "spree_tax_rates", ["zone_id"], name: "index_spree_tax_rates_on_zone_id", using: :btree
 
@@ -1040,21 +1041,14 @@ ActiveRecord::Schema.define(version: 20150729075629) do
     t.string   "login",                  limit: 255
     t.integer  "ship_address_id",        limit: 4
     t.integer  "bill_address_id",        limit: 4
+    t.string   "authentication_token",   limit: 255
+    t.string   "unlock_token",           limit: 255
+    t.datetime "locked_at"
+    t.datetime "remember_created_at"
     t.datetime "reset_password_sent_at"
     t.datetime "created_at",                                     null: false
     t.datetime "updated_at",                                     null: false
-    t.datetime "remember_created_at"
-    t.datetime "deleted_at"
-    t.string   "confirmation_token",     limit: 255
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string   "unlock_token",           limit: 255
-    t.string   "openid_identifier",      limit: 255
-    t.string   "authentication_token",   limit: 255
   end
-
-  add_index "spree_users", ["deleted_at"], name: "index_spree_users_on_deleted_at", using: :btree
-  add_index "spree_users", ["email"], name: "email_idx_unique", unique: true, using: :btree
 
   create_table "spree_variants", force: :cascade do |t|
     t.string   "sku",               limit: 255,                          default: "",    null: false
@@ -1132,7 +1126,7 @@ ActiveRecord::Schema.define(version: 20150729075629) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "visits", force: :cascade do |t|
-    t.binary   "visitor_id",       limit: 16
+    t.uuid     "visitor_id",       limit: 16
     t.string   "ip",               limit: 255
     t.text     "user_agent",       limit: 65535
     t.text     "referrer",         limit: 65535
