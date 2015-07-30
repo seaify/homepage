@@ -21,7 +21,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   # protected
 
-  # The path used when OmniAuth fails
+  # The path used when omniauth fails
   # def after_omniauth_failure_path_for(scope)
   #   super(scope)
   # end

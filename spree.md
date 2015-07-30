@@ -24,4 +24,12 @@ User is connected with address & orders.
 
 does there exist need to use spree_devise_auth? it actually didn't provide too much userful information, and user always need to be tweak.
 
+lib/spree/authentication_helpers.rb
+2. you need to change login_path, signup_path..in helpers.rb
+
 if use spree_user, then how to custom the spree_users model
+
+## spree user role.
+It has role table, and user_role table.
+
+so when an user is signup, it doesn't have a admin role, when you login to admin, it will redirect to a unauth page.
