@@ -73,18 +73,6 @@ GIT
       spree_core (= 3.0.3.beta)
 
 GIT
-  remote: git://github.com/spree/spree_auth_devise.git
-  revision: b554f307e5aa887110a70d54f8967c284f881375
-  branch: 3-0-stable
-  specs:
-    spree_auth_devise (3.0.0)
-      devise (~> 3.4.1)
-      devise-encryptable (= 0.1.2)
-      json
-      multi_json
-      spree_core (~> 3.0.0)
-
-GIT
   remote: git://github.com/spree/spree_gateway.git
   revision: 7301dc7c84c05b46427bf5003eda13ca64a48d7c
   branch: 3-0-stable
@@ -229,8 +217,6 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    devise-encryptable (0.1.2)
-      devise (>= 2.1.0)
     diff-lcs (1.2.5)
     disqus_rails (0.0.6)
     em-websocket (0.5.1)
@@ -674,7 +660,6 @@ DEPENDENCIES
   slim-rails
   social-share-button (= 0.1.5)
   spree!
-  spree_auth_devise!
   spree_gateway!
   spree_i18n!
   spring

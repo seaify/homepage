@@ -27,7 +27,7 @@ module Homepage
     # -- all .rb files in that directory are automatically loaded.
     config.generators.template_engine = :slim
     config.generators.scaffold_controller = "i18n_scaffold_controller"
-    config.i18n.default_locale = "zh-CN"
+    config.i18n.default_locale = "en"
 
     config.generators do |g|
       g.test_framework :rspec,

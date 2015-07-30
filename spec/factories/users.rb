@@ -15,6 +15,9 @@
 #  last_sign_in_ip        :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  spree_api_key          :string(48)
+#  ship_address_id        :integer
+#  bill_address_id        :integer
 #
 
 FactoryGirl.define do

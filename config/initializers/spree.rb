@@ -15,5 +15,9 @@ Spree.config do |config|
   # config.track_inventory_levels = false
 end
 
-#Spree.user_class = "Spree::LegacyUser"
-Spree.user_class = 'Spree::User'
+#pree.user_class = "Spree::LegacyUser"
+Spree.user_class = "User"
+
+Rails.application.config.to_prepare do
+  require_dependency 'spree/authentication_helpers'
+end

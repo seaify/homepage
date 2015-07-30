@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729094207) do
+ActiveRecord::Schema.define(version: 20150730055068) do
 
   create_table "ahoy_events", force: :cascade do |t|
     t.binary   "visit_id",   limit: 16
@@ -1044,18 +1044,11 @@ ActiveRecord::Schema.define(version: 20150729094207) do
     t.string   "authentication_token",   limit: 255
     t.string   "unlock_token",           limit: 255
     t.datetime "locked_at"
+    t.datetime "remember_created_at"
     t.datetime "reset_password_sent_at"
     t.datetime "created_at",                                     null: false
     t.datetime "updated_at",                                     null: false
-    t.datetime "remember_created_at"
-    t.datetime "deleted_at"
-    t.string   "confirmation_token",     limit: 255
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
   end
-
-  add_index "spree_users", ["deleted_at"], name: "index_spree_users_on_deleted_at", using: :btree
-  add_index "spree_users", ["email"], name: "email_idx_unique", unique: true, using: :btree
 
   create_table "spree_variants", force: :cascade do |t|
     t.string   "sku",               limit: 255,                          default: "",    null: false
@@ -1127,6 +1120,9 @@ ActiveRecord::Schema.define(version: 20150729094207) do
     t.string   "last_sign_in_ip",        limit: 255
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
+    t.string   "spree_api_key",          limit: 48
+    t.integer  "ship_address_id",        limit: 4
+    t.integer  "bill_address_id",        limit: 4
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

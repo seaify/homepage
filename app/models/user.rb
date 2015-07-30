@@ -15,12 +15,15 @@
 #  last_sign_in_ip        :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  spree_api_key          :string(48)
+#  ship_address_id        :integer
+#  bill_address_id        :integer
 #
 
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable,
+  devise :database_authenticatable, :Registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
 end
