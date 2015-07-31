@@ -3,6 +3,8 @@ class UserVisitController < ApplicationController
     @visits = Visit.all
   end
 
+
+
   def chart
     @chart = LazyHighCharts::HighChart.new('graph') do |f|
       f.title(:text => "Population vs GDP For 5 Big Countries [2009]")
