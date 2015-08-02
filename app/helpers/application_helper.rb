@@ -100,8 +100,10 @@ module ApplicationHelper
                         'pdxgw|netfront|xiino|vodafone|portalmmm|sagem|mot-|sie-|ipod|up\\.b|' +
                         'webos|amoi|novarra|cdm|alcatel|pocket|iphone|mobileexplorer|mobile'
   def mobile?
+    ap "hello, my world"
     agent_str = request.user_agent.to_s.downcase
-    return false if agent_str =~ /ipad/
+    ap agent_str
+    return false if agent_str =~ /ipad|nexus 7|nexus 10/
     agent_str =~ Regexp.new(MOBILE_USER_AGENTS)
   end
 

@@ -10,8 +10,7 @@ html
   body
     = disqus_init
     = render template: 'layouts/header'
-    div.main-container.container#main
-      div.row
-        = yield
+    div.container
+      = yield
 
 

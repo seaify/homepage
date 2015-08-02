@@ -2,7 +2,7 @@
 #
 # Table name: ahoy_events
 #
-#  id         :binary(16)       not null, primary key
+#  id         :integer          not null, primary key
 #  visit_id   :binary(16)
 #  user_id    :integer
 #  name       :string(255)

@@ -2,7 +2,7 @@
 #
 # Table name: visits
 #
-#  id               :binary(16)       not null, primary key
+#  id               :integer          not null, primary key
 #  visitor_id       :binary(16)
 #  ip               :string(255)
 #  user_agent       :text(65535)
