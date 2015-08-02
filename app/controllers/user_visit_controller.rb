@@ -1,6 +1,6 @@
 class UserVisitController < ApplicationController
   def show
-    @visits = Visit.all
+    @visits_grid = initialize_grid(Visit)
   end
 
 
