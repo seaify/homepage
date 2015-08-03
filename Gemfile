@@ -87,6 +87,8 @@ gem 'bootstrap-datepicker-rails'
 gem 'jquery-ui-rails'
 gem 'highcharts-rails', '~> 3.0.0'
 gem 'lazy_high_charts'
+gem 'cancancan', '~> 1.8.4'
+gem 'enumerize'
 
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'

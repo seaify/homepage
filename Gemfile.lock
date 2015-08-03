@@ -41,7 +41,7 @@ GIT
       activemerchant (~> 1.47.0)
       acts_as_list (~> 0.6)
       awesome_nested_set (~> 3.0.1)
-      cancancan (~> 1.10.1)
+      cancancan (~> 1.8.4)
       carmen (~> 1.0.0)
       deface (~> 1.0.0)
       ffaker (~> 1.16)
@@ -179,7 +179,7 @@ GEM
       columnize (= 0.9.0)
     callsite (0.0.11)
     camertron-eprun (1.1.0)
-    cancancan (1.10.1)
+    cancancan (1.8.4)
     canonical-rails (0.0.9)
       rails (>= 3.1, < 5.0)
     carmen (1.0.2)
@@ -222,6 +222,8 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+    enumerize (0.11.0)
+      activesupport (>= 3.2)
     errbase (0.0.3)
     erubis (2.7.0)
     eventmachine (1.0.7)
@@ -609,9 +611,11 @@ DEPENDENCIES
   bootstrap-sass
   brakeman
   byebug
+  cancancan (~> 1.8.4)
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.1)
   disqus_rails
+  enumerize
   exception_notification
   factory_girl
   factory_girl_rails

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150730055068) do
+ActiveRecord::Schema.define(version: 20150803055723) do
 
   create_table "ahoy_events", force: :cascade do |t|
     t.binary   "visit_id",   limit: 16
@@ -1123,6 +1123,7 @@ ActiveRecord::Schema.define(version: 20150730055068) do
     t.string   "spree_api_key",          limit: 48
     t.integer  "ship_address_id",        limit: 4
     t.integer  "bill_address_id",        limit: 4
+    t.string   "role",                   limit: 255
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

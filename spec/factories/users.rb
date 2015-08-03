@@ -18,6 +18,7 @@
 #  spree_api_key          :string(48)
 #  ship_address_id        :integer
 #  bill_address_id        :integer
+#  role                   :string(255)
 #
 
 FactoryGirl.define do
