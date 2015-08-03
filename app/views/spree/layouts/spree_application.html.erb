@@ -9,8 +9,8 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/google_analytics.js' %>
+    <%= render template: 'layouts/header.html.slim' %>
     <%= render partial: 'spree/shared/header' %>
-
     <div class="container">
       <div class="row" data-hook>
         <%= breadcrumbs(@taxon) %>
