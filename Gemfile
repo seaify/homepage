@@ -90,9 +90,11 @@ gem 'lazy_high_charts'
 gem 'cancancan', '~> 1.8.4'
 gem 'enumerize'
 
+gem "spree_sample", :path => "sample/"
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '3-0-stable'
+#gem 'spree_china_sample', github: 'seaify/spree_china_sample'
 
 
 #gem 'dashing-rails'

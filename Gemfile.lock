@@ -69,8 +69,6 @@ GIT
       spree_api (= 3.0.3.beta)
       spree_core (= 3.0.3.beta)
       sprockets-rails (~> 2.2)
-    spree_sample (3.0.3.beta)
-      spree_core (= 3.0.3.beta)
 
 GIT
   remote: git://github.com/spree/spree_gateway.git
@@ -79,6 +77,12 @@ GIT
   specs:
     spree_gateway (3.0.0.beta)
       spree_core (~> 3.0.0)
+
+PATH
+  remote: sample/
+  specs:
+    spree_sample (3.0.3.beta)
+      spree_core (= 3.0.3.beta)
 
 GEM
   remote: https://rubygems.org/
@@ -666,6 +670,7 @@ DEPENDENCIES
   spree!
   spree_gateway!
   spree_i18n!
+  spree_sample!
   spring
   spring-commands-rspec
   sqlite3
