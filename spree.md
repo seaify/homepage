@@ -37,3 +37,5 @@ so when an user is signup, it doesn't have a admin role, when you login to admin
 ## dashing-rails, suite for api, not for simple active model display
 
 ## spree has seperate compoents, lead to version missing match
+
+## 购买的入口，缺少立即购买
