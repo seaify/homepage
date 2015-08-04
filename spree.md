@@ -39,3 +39,6 @@ so when an user is signup, it doesn't have a admin role, when you login to admin
 ## spree has seperate compoents, lead to version missing match
 
 ## 购买的入口，缺少立即购买
+## spree产品页面，看样子没法选择产品的属性？
+## 而且在购买流程中，优先使用的是billing地址，也就是发票地址，这是不合理的，很多人根本不用发票，发票地址，应该和默认地址直接一样。
+## 另外国产的产品页面，一般需要有，详细参数，规格参数，常见问题，等选项

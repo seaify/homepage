@@ -89,6 +89,7 @@ gem 'highcharts-rails', '~> 3.0.0'
 gem 'lazy_high_charts'
 gem 'cancancan', '~> 1.8.4'
 gem 'enumerize'
+gem 'china_city'
 
 
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
