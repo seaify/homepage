@@ -35,3 +35,5 @@ It has role table, and user_role table.
 so when an user is signup, it doesn't have a admin role, when you login to admin, it will redirect to a unauth page.
 
 ## dashing-rails, suite for api, not for simple active model display
+
+## spree has seperate compoents, lead to version missing match
