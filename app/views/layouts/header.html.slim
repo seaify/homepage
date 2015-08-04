@@ -21,6 +21,6 @@ div
         ul.nav.navbar-nav.navbar-right
           li
             = link_to 'Login', "/users/sign_in"
-
-<div style='display:none;'><a href='http://www.live800.com'>live800Link.webpagechat</a></div><script language="javascript" src="http://chat16.live800.com/live800/chatClient/floatButton.js?jid=5804750394&companyID=540628&configID=79146&codeType=custom"></script><div style='display:none;'><a href='http://en.live800.com'>live chat</a></div>
+- if live800_enabled?
+  <div style='display:none;'><a href='http://www.live800.com'>live800Link.webpagechat</a></div><script language="javascript" src="http://chat16.live800.com/live800/chatClient/floatButton.js?jid=5804750394&companyID=540628&configID=79146&codeType=custom"></script><div style='display:none;'><a href='http://en.live800.com'>live chat</a></div>
 

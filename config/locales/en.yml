@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+  settings:
+    attributes:
+      mobile_regex_format:
+        name: mobile regex string
+      real_name_regex_format:
+        name: real name regex string
+      live800_enable_for_non_store:
+        name: enable live800 show up for non-store pages

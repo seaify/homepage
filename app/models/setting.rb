@@ -14,4 +14,5 @@
 class Setting < RailsSettings::CachedSettings
   defaults[:mobile_regex_format] = '^1[3|4|5|8][0-9]\\d{8}$'
   defaults[:real_name_regex_format] = '^[\u4E00-\u9FA5]{2,4}$'
+  defaults[:live800_enable_for_non_store] = 0
 end
