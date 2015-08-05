@@ -14,6 +14,7 @@ div.row
     div.panel.panel-default
       div.panel-body.markdown
         - disqus_thread
+
   - if !mobile?
     div.col-md-3
       div.panel.panel-default
@@ -33,3 +34,8 @@ div.row
               = link_to "My Ruby-china Blog", "https://ruby-china.org/seaify"
             li
               = image_tag "qrcode.png", :class => "img-responsive"
+
+      div.panel.panel-default
+        div.panel-heading Scanning the qrcode to share on wechat
+        div.panel-body
+          img src=@topic_qrcode.to_data_url class="img-responsive"

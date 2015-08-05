@@ -58,6 +58,7 @@ class TopicsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_topic
       @topic = Topic.find(params[:id])
+      @topic_qrcode = RQRCode::QRCode.new(request.original_url).as_png(size: 231)
     end
 
     # Only allow a trusted parameter "white list" through.
