@@ -127,4 +127,5 @@ group :development do
   gem 'rails_panel'
   gem 'pry'
   gem 'pry-byebug'
+  #gem 'pry-rails', :group => :development
 end
