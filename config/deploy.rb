@@ -82,6 +82,7 @@ task :deploy => :environment do
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
 
+
     to :launch do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/logs"
