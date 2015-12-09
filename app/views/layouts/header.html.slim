@@ -3,24 +3,17 @@ div
     div.container
       div.navbar-header
         a.navbar-brand href="/" Seaify
-      ul.nav.navbar-nav
-        li
-          a href="/about" About
-        li
-          a href="/service" Service
-        li
-          a href="/ratings" Rating
-        li
-          a href="/store" Store
-
-      - if current_user
-        ul.nav.navbar-nav.navbar-right
+      nav
+        ul.nav.navbar-nav
           li
-            = link_to 'Logout', "/users/sign_out", :method => 'delete'
-      - else
-        ul.nav.navbar-nav.navbar-right
+            a href="/about" About
           li
-            = link_to 'Login', "/users/sign_in"
-- if live800_enabled?
-  <div style='display:none;'><a href='http://www.live800.com'>live800Link.webpagechat</a></div><script language="javascript" src="http://chat16.live800.com/live800/chatClient/floatButton.js?jid=5804750394&companyID=540628&configID=79146&codeType=custom"></script><div style='display:none;'><a href='http://en.live800.com'>live chat</a></div>
+            a href="/service" Service
+          li
+            a href="/ratings" Rating
+          li
+            a href="/store" Store
+        div#side-panel-trigger.side-panel-trigger
+          a href="#"
+            = icon('reorder')
 

@@ -66,6 +66,7 @@ gem 'factory_girl'
 gem 'devise', '~> 3.4.1'
 # 分享功能
 gem 'social-share-button', '0.1.5'
+gem 'font-awesome-sass', '~> 4.4.0'
 
 gem 'god'
 gem 'newrelic_rpm'
